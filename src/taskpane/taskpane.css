@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary-50);
+}
+
+.fetch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

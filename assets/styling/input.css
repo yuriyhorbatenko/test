@@ -1,0 +1,197 @@
+::-webkit-input-placeholder {
+  color: var(--input-placeholder);
+}
+:-moz-placeholder {
+  color: var(--input-placeholder);
+}
+::-moz-placeholder {
+  color: var(--input-placeholder);
+}
+:-ms-input-placeholder {
+  color: var(--input-placeholder);
+}
+.ces-form-input {
+  position: relative;
+}
+.ces-form-input .form-control {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  border-radius: var(--border-radius-8);
+  padding: 5px 12px;
+  color: var(--text-color-dark);
+  min-height: 36px;
+  background-color: var(--default-input-bg);
+  border-color: var(--default-input-border);
+}
+.ces-form-input .form-control:focus {
+  box-shadow: var(--input-box-shadow);
+  border-color: var(--color-primary-500);
+}
+.ces-form-input .form-control:hover {
+  /* border-color: var(--color-primary-500); */
+}
+.ces-form-input .form-control:disabled {
+  background-color: var(--input-disabled-bg);
+  border-color: var(--input-disabled-border);
+  color: var(--input-placeholder-color);
+}
+.ces-form-input .form-control.invalid-input {
+  border-color: var(--color-danger-600) !important;
+}
+.ces-form-input.ces-textbox-disabled .form-control:disabled {
+  background-color: var(--input-disabled-bg);
+  border-color: var(--input-disabled-border);
+  color: var(--input-placeholder-color);
+  cursor: not-allowed;
+}
+.ces-form-input .input-helper {
+  margin-top: 4px;
+  font-size: var(--font-size-14);
+}
+.ces-form-input .invalid-input-message {
+  color: var(--color-danger-600);
+}
+.ces-form-input-sm .form-control {
+  width: 25px;
+  max-width: 25px;
+  min-height: 22px;
+  padding: 1px 8px;
+  font-size: var(--font-size-14);
+}
+.ces-form-input-md .form-control {
+  min-height: 36px;
+  padding: 5px 12px;
+  font-size: var(--font-size-16);
+}
+.ces-form-input-lg .form-control {
+  min-height: 40px;
+  padding: 7px 12px;
+  font-size: var(--font-size-16);
+}
+.ces-form-input input:disabled::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: var(--input-placeholder-color);
+}
+.ces-form-input input:disabled:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--input-placeholder-color);
+}
+.ces-form-input input:disabled::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--input-placeholder-color);
+}
+.ces-form-input input:disabled:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: var(--input-placeholder-color);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.ces-form-number {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+  justify-content: end;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.ces-form-number .ces-inputnumber-button-group {
+  width: var(--spacing-26);
+  flex: none;
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  height: calc(100% - 2px);
+}
+.ces-form-number .ces-inputnumber-button-group .numberinp-btn:hover {
+  /* background-color: var(--number-input-hover); */
+}
+.ces-form-number .ces-inputnumber-button-group .numberinp-btn:active:focus {
+  background-color: var(--number-input-focus);
+}
+.ces-form-number .ces-inputnumber-button-group .increment-btn,
+.ces-form-number .ces-inputnumber-button-group .decrement-btn {
+  border-width: 0;
+  border-inline-start-width: 0px;
+  flex: 1 1 50%;
+  box-shadow: none;
+  position: relative;
+  aspect-ratio: auto;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--default-input-border);
+  background-color: var(--avatar-bg);
+}
+.ces-form-number .ces-inputnumber-button-group .increment-btn .icon,
+.ces-form-number .ces-inputnumber-button-group .decrement-btn .icon {
+  display: inline-flex;
+  font-size: var(--font-size-10);
+  width: 1em;
+  height: 1em;
+  color: var(--number-input-icon);
+}
+.ces-form-number .ces-inputnumber-button-group .decrement-btn {
+  border-bottom-right-radius: var(--border-radius-8);
+}
+.ces-form-number .ces-inputnumber-button-group .increment-btn {
+  border-top-right-radius: var(--border-radius-8);
+  border-bottom: 1px solid var(--default-input-border);
+}
+.ces-form-number .form-control:focus + .ces-inputnumber-button-group .numberinp-btn {
+  background-color: var(--input-number-focus);
+  border-color: var(--color-primary-500);
+}
+.ces-form-number .form-control:focus + .ces-inputnumber-button-group .numberinp-btn.increment-btn {
+  border-color: var(--color-primary-500);
+}
+.ces-form-number .form-control.invalid-input + .ces-inputnumber-button-group .numberinp-btn {
+  background-color: rgba(246, 76, 76, 0.16);
+  border-color: var(--color-danger-600);
+  color: var(--color-danger-600);
+}
+.ces-form-number .form-control.invalid-input + .ces-inputnumber-button-group .numberinp-btn .icon {
+  color: var(--color-danger-600);
+}
+.ces-form-number .form-control.invalid-input + .ces-inputnumber-button-group .numberinp-btn.increment-btn {
+  border-color: var(--color-danger-600);
+}
+.ces-form-number:hover .form-control {
+  /* border-color: var(--color-primary-500); */
+}
+.ces-form-number:hover .ces-inputnumber-button-group .numberinp-btn {
+  /* background-color: var(--input-number-focus);
+  border-color: var(--color-primary-500); */
+}
+.ces-form-number:hover .ces-inputnumber-button-group .numberinp-btn.increment-btn {
+  /* border-color: var(--color-primary-500); */
+}
+.ces-form-number.ces-textbox-disabled .ces-inputnumber-button-group .numberinp-btn {
+  background-color: inherit;
+  border-color: var(--input-disabled-border);
+}
+.ces-form-number.ces-textbox-disabled .ces-inputnumber-button-group .numberinp-btn .icon {
+  border-color: var(--input-disabled-border);
+  color: var(--number-input-icon-disabled);
+}
+.ces-form-number.ces-textbox-disabled:hover .ces-inputnumber-button-group .numberinp-btn {
+  border-color: var(--input-disabled-border);
+  pointer-events: none;
+}
+.ces-form-number.ces-textbox-disabled:hover .ces-inputnumber-button-group .numberinp-btn.increment-btn {
+  border-color: var(--input-disabled-border);
+}
