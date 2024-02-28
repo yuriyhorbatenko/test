@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://github.com/yuriyhorbatenko/test/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = "https://yuriyhorbatenko.github.io/test/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 async function getHttpsOptions() {
   const httpsOptions = await devCerts.getHttpsServerOptions();
@@ -68,7 +68,7 @@ module.exports = async (env, options) => {
       new HtmlWebpackPlugin({
         filename: "index.html",
         template: "./src/taskpane/index.html",
-        chunks: ["polyfill", "taskpane"],
+        chunks: ["polyfill", "index"],
       }),
       new CopyWebpackPlugin({
         patterns: [
